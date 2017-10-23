@@ -13,6 +13,6 @@ RUN npm install node-raumserver
 # Expose HTTP 8080 to Reach the Server
 EXPOSE 8080
 
-
+WORKDIR node_modules/node-raumserver
 # Start the Server
-CMD [ "npm", "start" , "--prefix node_modules/node-raumserver"]
+CMD [ "npm", "start"]
