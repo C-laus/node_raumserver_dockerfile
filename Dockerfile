@@ -5,8 +5,8 @@ FROM node:latest
 WORKDIR /usr/src/app
 
 # Download and install node-raumserver
-RUN npm install node-raumkernel@1.1.6
-RUN npm install node-raumserver@0.0.9
+RUN npm install node-raumkernel@1.1.9
+RUN npm install node-raumserver@0.1.0
 
 COPY ./config.json ./node_modules/node-raumserver/config/default.json
 
